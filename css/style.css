@@ -75,7 +75,7 @@ body {
     padding: 1em;
 }
 
-/* Welcome Section with Unique Animation */
+/* Welcome Section with Animation */
 #welcome {
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ body {
     color: #000000;
 }
 
-/* About Me Section Styles - Updated Layout */
+/* About Me Section Styles*/
 .bio-container {
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@ body {
 
 .bio-header {
     text-align: center;
-    color: #623c58;
+    color: #ca7dba;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -152,7 +152,7 @@ body {
 
 .projects-title {
     font-size: 2.5em;
-    color: #623c58;
+    color: #ca7dba;
     margin-bottom: 20px;
 }
 
@@ -203,12 +203,12 @@ footer {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #110909;
+    background-color: #404040;
     color: #ca7dba;
 }
 
 header.dark-mode, footer.dark-mode {
-    background-color: #3d1536;
+    background-color: #ca7dba;
 }
 
 .dark-mode .bio-container, .dark-mode .project {
