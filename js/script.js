@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Update year in the footer
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Initialize the slideshow
+    initializeSlideshow();
 
     // Event listeners for nav menu links
     document.querySelectorAll('.nav-menu a').forEach(link => {
@@ -27,6 +30,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function toggleMenu() {
     document.querySelector('.nav-menu ul').classList.toggle('open');
+}
+
+function initializeSlideshow() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.project-slideshow .slide');
+    const showSlide = (index) => {
+        if (index >= slides.length) index = 0;
+        if (index < 0) index = slides.length - 1;
+
+        slides.forEach(slide => slide.style.display = 'none');
+        slides[index].style.display = 'block';
+        currentSlide = index;
+    };
+
+    document.querySelector('.slide-btn.prev').addEventListener('click', () => showSlide(--currentSlide));
+    document.querySelector('.slide-btn.next').addEventListener('click', () => showSlide(++currentSlide));
+
+    showSlide(currentSlide); // Show the first slide
 }
 
 function toggleTheme() {

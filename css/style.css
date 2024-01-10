@@ -218,5 +218,170 @@ header.dark-mode, footer.dark-mode {
 
 .dark-mode .bio-text {
     background-color: #333; /* Same grey as project boxes */
-    color: #fff; /* Ensure text is visible in dark mode */
+    color: #ca7dba; /* Ensure text is visible in dark mode */
+}
+
+body.dark-mode .clubs-box {
+    background-color: #333;
+    color: #ca7dba;
+}
+
+body.dark-mode .skill-item {
+    background-color: #333;
+    color: #ca7dba;
+}
+
+
+
+/* Contact Section Styles */
+
+/* Container for the Contact Section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content vertically and horizontally */
+    justify-content: center;
+    margin: 40px auto; 
+    padding: 20px; 
+    
+}
+
+/* Style for Contact Section Title */
+#contact .contact-title {
+    font-size: 2.5em; /* Larger font size for title */
+    color: #ca7dba; /* Color of the title */
+    margin-bottom: 30px; /* Space below the title */
+    text-align: center; /* Centering the title */
+}
+
+/* Style for Each Contact Item */
+#contact .contact-item {
+    display: flex;
+    align-items: center; /* Align image and text */
+    margin-bottom: 15px; /* Space between contact items */
+}
+
+/* Style for Images in Contact Items */
+#contact .contact-item img {
+    width: 25px;  /* Smaller fixed size */
+    height: 25px; 
+    border-radius: 50%; /* Circular images */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 15px; /* Space between image and text */
+}
+
+/* Skills Section Styles */
+.skills-container {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.skills-title {
+    font-size: 2.5em;
+    color: #ca7dba;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.skill-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #ca7dba;
+}
+
+.skill-icon {
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust number of columns for mobile */
+    }
+}
+
+
+.project-slideshow {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden; /* Keeps the arrows within the container */
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ca7dba;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slide-btn.prev {
+    left: 0;
+}
+
+.slide-btn.next {
+    right: 0;
+}
+
+.project-slideshow:hover .slide-btn {
+    display: block;
+}
+
+/* Clubs Section Styling */
+.clubs-container {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.clubs-title {
+    font-size: 2.5em;
+    color: #ca7dba;
+    margin-bottom: 20px;
+}
+
+.clubs-box {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.clubs-image img {
+    width: 200px; /* Square size */
+    height: 200px;
+    object-fit: cover; /* Ensure image covers the area */
+    border-radius: 10px; /* Optional rounded corners */
+    margin-right: 20px;
+}
+
+.clubs-text {
+    text-align: left;
 }

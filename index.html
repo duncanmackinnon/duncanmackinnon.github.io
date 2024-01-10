@@ -17,6 +17,8 @@
             <ul>
                 <li><a href="#welcome">Home</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#clubs">Clubs</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact Info</a></li>
                 <li><a href="#" onclick="toggleTheme()">Toggle Theme</a></li>
@@ -27,15 +29,13 @@
     <section id="welcome" class="full-screen-section">
         <div class="welcome-content">
             <h1><big>Hi, I'm Duncan MacKinnon</big></h1>
-            <h2><small><font color = #000000>Scroll down to check out my portfolio site</font></small></h2>
+            <h2><small><font color = #000000>Scroll down to check out my portfolio site</font></small></p>
         </div>
     </section>
 
     <section id="about" class="full-screen-section">
-        <div class="section-content bio-container">
-            <div class="bio-header">
-                <h1>About Me</h1>
-            </div>
+        <div class="bio-container">
+            <h1 class="bio-header">About Me</h1>
             <div class="bio-content">
                 <div class="bio-image">
                     <img src="headshot2.jpg" alt="Duncan MacKinnon">
@@ -51,41 +51,120 @@
             </div>
         </div>
     </section>
-
-    <section id="portfolio" class="full-screen-section">
-        <div class="section-content projects-container">
-            <div class="projects-title">
-                <h1>Projects</h1>
+   
+    <section id="clubs" class="full-screen-section">
+    <div class="section-content clubs-container">
+        <h1 class="clubs-title">Clubs</h1>
+        <div class="clubs-box">
+            <div class="clubs-image">
+                <img src="qxr-logo.jpg" alt="Club Image">
             </div>
-            <div class="projects-grid">
-                <div class="project">
-                    <h3>Image Identification Web App</h3>
-                    <p>A basic website which uses the VGG-19 image identification model to analyze images.</p>
-                    <p>GitHub: <a href="https://github.com/duncanmackinnon/image-web-app" target="_blank">image-web-app</a></p>
-                </div>
-                <div class="project">
-                    <h3>T.B.A</h3>
-                    <p>Something (involving data) is in the works.</p>
-                </div>
-                <div class="project">
-                    <h3>T.B.A</h3>
-                    <p>A mobile application is being designed.</p>
-                </div>
+            <div class="clubs-text">
+                <ul>
+                    <li>First Year Representative</li>
+                    <li>Researched extended reality to procure information for general members</li>
+                    <li>Recruited dozens of members during the Club Fair</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+    
+<section id="skills" class="full-screen-section">
+    <div class="section-content skills-container">
+        <h1 class="skills-title">Skills</h1>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="html-icon.png" alt="HTML" class="skill-icon">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item">
+                <img src="CSS icon.png" alt="CSS" class="skill-icon">
+                <p>CSS</p>
+            </div>
+            <div class="skill-item">
+                <img src="javascript-logo.png" alt="JavaScript" class="skill-icon">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <img src="python-logo.png" alt="Python" class="skill-icon">
+                <p>Python</p>
+            </div>
+            <div class="skill-item">
+                <img src="git-logo.png" alt="Git" class="skill-icon">
+                <p>Git</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+        <!-- Projects Section as a Slideshow -->
+        <section id="portfolio" class="full-screen-section">
+            <div class="projects-container">
+                <h1 class="projects-title">Projects</h1>
+                <div class="project-slideshow">
+                    
+                    <!-- New Slide for the Website as a Project -->
+                    <div class="slide">
+                        <div class="project">
+                            <h3>Portfolio Website</h3>
+                            <p>This website showcases my skills, projects, and club involvements.</p>
+                            <p>Skills: HTML, CSS, JavaScript, Responsive Design</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide for Image Web App Project -->
+                    <div class="slide" id="imageWebAppProject">
+                        <div class="project">
+                            <h3>Image Identification Web App</h3>
+                            <p>A basic website which uses the VGG-19 image identification model to analyze images.</p>
+                            <p>Skills: Python, Flask, TensorFlow</p>
+                            <p>GitHub: <a href="https://github.com/duncanmackinnon/image-web-app" target="_blank">image-web-app</a></p>
+                        </div>
+                    </div>
+        
+                    <!-- Slide for T.B.A Project 1 -->
+                    <div class="slide">
+                        <div class="project">
+                            <h3>T.B.A</h3>
+                            <p>Something (involving data) is in the works. Expect this to be uploaded by late December.</p>
+                            <!-- Skills will be added later -->
+                        </div>
+                    </div>
+        
+                    <!-- Slide for T.B.A Project 2 -->
+                    <div class="slide">
+                        <div class="project">
+                            <h3>T.B.A</h3>
+                            <p>A mobile application is being designed. Expect this to be uploaded at the latest mid January.</p>
+                            <!-- Skills will be added later -->
+                        </div>
+                    </div>
+        
+                    
+        
+                    <!-- Navigation buttons inside the slideshow container -->
+                    <button class="slide-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="slide-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>        
     <section id="contact" class="full-screen-section">
         <div class="section-content">
             <h1>Connect with me:</h1>
             <div class="contact-item">
+                <img src="email-logo.jpg" alt="Email Logo">
                 <p>Email: <a href="mailto:duncan.mackinnon@queensu.ca">duncan.mackinnon@queensu.ca</a></p>
             </div>
             <div class="contact-item">
+                <img src="github-logo.png" alt="GitHub Logo">
                 <p>GitHub: <a href="https://github.com/duncanmackinnon" target="_blank">duncanmackinnon</a></p>
             </div>
             <div class="contact-item">
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/duncan-mackinnon-3496a92a4/" target="_blank">duncan-mackinnon-3496a92a4</a></p>
+                <img src="linkedin-logo.png" alt="LinkedIn Logo">
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/duncan-mackinnon/" target="_blank">duncan-mackinnon</a></p>
             </div>
         </div>
     </section>
