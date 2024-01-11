@@ -226,11 +226,16 @@ body.dark-mode .clubs-box {
     color: #ca7dba;
 }
 
-body.dark-mode .skill-item {
-    background-color: #333;
+body.dark-mode .skills-container {
+    background-color: #404040;
     color: #ca7dba;
 }
 
+
+body.dark-mode .skill-item {
+    background-color: #333; /* Dark background for individual boxes */
+    color: #ca7dba;
+}
 
 
 /* Contact Section Styles */
@@ -272,9 +277,11 @@ body.dark-mode .skill-item {
 }
 
 /* Skills Section Styles */
+/* Skills Section Styles */
 .skills-container {
     text-align: center;
     padding: 2em 0;
+    width: 100%;
 }
 
 .skills-title {
@@ -283,30 +290,31 @@ body.dark-mode .skill-item {
     margin-bottom: 20px;
 }
 
-.skills-grid {
+.skills-grid-box {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    padding: 20px;
     justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8; /* Large box background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skill-item {
-    background-color: #f8f8f8;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background-color: #ffffff; /* Individual box background */
+    border: 2px solid #ca7dba; /* Border for individual boxes */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.skill-item p {
-    margin-top: 10px;
-    font-size: 1.1em;
-    color: #ca7dba;
-}
-
 .skill-icon {
-    width: 60px; /* Adjust size as needed */
+    width: 80px;
     height: auto;
+    margin-bottom: 10px;
 }
 
 /* Responsive Styles */
