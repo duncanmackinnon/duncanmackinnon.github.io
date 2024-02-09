@@ -86,7 +86,7 @@ export const projectsData = [
   {
     title: "AudioSphere",
     description:
-      "A spotify clone which is fully functional including premimum plans and song uploads",
+      "A spotify clone which is fully functional including premium plans and song uploads",
     tags: ["React", "Typescript", "Next.js", "PostgreSQL", "Tailwind", "Supabase"],
     imageUrl: spotifymockImg,
   },
