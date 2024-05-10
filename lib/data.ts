@@ -68,7 +68,7 @@ export const links = [
       },
       {
         title: "Data Engineering Intern - Knorket.AI",
-        location: "Kingston, ON",
+        location: "Remote, Canada",
         description:
           "Used machine learning to structure raw documents from various cloud and web sources into vector databases",
         icon: React.createElement(FaReact),
